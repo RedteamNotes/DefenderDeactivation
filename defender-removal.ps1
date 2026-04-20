@@ -18,6 +18,7 @@ Write-Host "[*] RedTeamNotes Native Neutralization initialized." -ForegroundColo
 function Grant-RegistryPermission {
     param([string]$Path)
     # Target: Grant 'Administrators' group full control over the registry key
+    # Registry keys are often owned by TrustedInstaller; we must hijack the ACL
     $Acl = Get-Acl -Path $Path
     $Ar = New-Object System.Security.AccessControl.RegistryAccessRule(
         "Administrators", "FullControl", "Allow"
