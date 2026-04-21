@@ -123,7 +123,7 @@ foreach ($R in $Results) {
 }
 
 if ($Ready) {
-    Write-Host "`n[#] SUCCESS: Environment is ready for Flare-VM." -ForegroundColor Green
+    Write-Host "`n[#] SUCCESS: Environment is ready for Flare VM or Commando VM." -ForegroundColor Green
 } else {
     Write-Host "`n[#] WARNING: Reboot recommended to finalize neutralization." -ForegroundColor Yellow
 }
