@@ -4,7 +4,7 @@
     Comprehensive Windows Defender Deactivation Script.
     
 .DESCRIPTION
-    A multi-layered neutralization tool designed for isolated lab environments (e.g., Flare VM).
+    A multi-layered neutralization tool designed for isolated lab environments (e.g., Flare or Commando VM).
     Integrates GPO policy enforcement, ACL/Ownership hijacking for Service Control Manager (SCM),
     Scheduled Task suspension, and Image File Execution Options (IFEO) hijacking.
     
