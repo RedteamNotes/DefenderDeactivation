@@ -1,6 +1,6 @@
 # Defender Deactivation Script
 
-A native PowerShell utility designed for the absolute neutralization of Microsoft Defender in isolated laboratory environments (e.g., Flare-VM). This script utilizes multi-layered enforcement to bypass kernel-mode protections and ensure persistence-free operation.
+A native PowerShell utility designed for the absolute neutralization of Microsoft Defender in isolated laboratory environments (e.g., Commando or Flare VM). This script utilizes multi-layered enforcement to bypass kernel-mode protections and ensure persistence-free operation.
 
 ### Key Features
 * **GPO Policy Overrides**: Forces `DisableAntiSpyware` and `DisableRealtimeMonitoring` registry keys to satisfy pre-installation checks for security suites.
@@ -22,4 +22,4 @@ Set-ExecutionPolicy Bypass -Scope Process
 2. **Reboot**: A system restart is mandatory to unload kernel-mode filter drivers (`WdFilter.sys`) and finalize the neutralization.
 3. **Environment**: Intended for **lab/analysis VMs only**. This operation is non-reversible without a system snapshot.
 
-**Maintained by RedTeamNotes Infrastructure Engineering**
+**Maintained by RedTeamNotes**
